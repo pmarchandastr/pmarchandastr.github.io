@@ -215,7 +215,7 @@ img.image
 p,li,dt,dd
 {
   font-size: 1.1em;
- font-family: "Lucida Console", Serif;
+  font-family: "Helvetica";
  text-align: justify;
  margin-left: 30px;
 }
