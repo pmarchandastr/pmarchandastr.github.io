@@ -43,7 +43,10 @@
        <h1>Research</h1>
 
 
-       <h2>Non-ideal MHD in star formation</h2>
+       <div class="titleresearch">
+         <span class="titletitleres"> Non-ideal MHD in star formation </span>
+       </div>
+
        <h3>How stars form ?</h3>
        <p>The interstellar medium is filled with diffuse matter, that gathers into "molecular clouds". These giant structures of several hundred parsec can host thousands of solar mass of gas. Within these clouds, turbulent motions and feedback from nearby stars (particles, radiations) create overdense regions called "dense cores". If the gravitational force can overcome the support of the thermal and magnetic pressure, the core is unstable and collapses under its own weight. The matter becomes more and more hot and dense in the center, until the temperature is high enough to ignite the nuclear fusion reactions of hydrogen. The gas of the dense core rotates around its center of gravity, and this rotation spins up as the gas collapses. The centrifugal force creates a support against the pulling gravity, which leads to the formation of a disk. In this disk, grains and molecules aggregate, grow and eventually form planets, moons, asteroids. This disk is called "protoplanetary disk".</p>
 
@@ -51,11 +54,19 @@
        <p>There are two main problems concerning star formation. The first is the angular momentum regulation. We know from observations that dense cores rotates too fast compared to stars. If their angular momentum (their "inertia of rotation") was conserved, as it is the case in closed systems, the collapsing gas would spin up so fast that any structure would be teared apart by the centrifugal force. In more scientific terms, dense cores have a specific angular momentum 1000 times higher than young stars. One of the best candidates to solve this issue is the magnetic braking: while the gas rotates, the twisting of the magnetic field lines creates a counter-acceleration that slows the rotation, just like a guitar cord exerts a force when it is pulled. The magnetic field carries the angular momentum away from the core back in the interstellar medium. Another mechanism that removes angular momentum from the dense core are the protostellar outflows : fast rotating gas being ejected by the combination of the magnetic and centrifugal forces.
 The first studies used the ideal MagnetoHydroDynamics (MHD) to study star formation, a formalism that simply describes the behavior of a magnetized fluid. However, in this framework, the magnetic braking is so efficient that a very low amount of angular momentum remains in the core, preventing its rotation and the formation of a disk (that we know exist because we observe them. And we are pretty sure planets exist too !). This problem is known as the magnetic braking catastrophe. The second problem in star formation is also linked to the magnetic field. Similarly to the angular momentum, the flux of the magnetic field is conserved in ideal MHD, leading to unrealistically high magnetic fiels in stars (for the sun, it would be 10 millions times too high !). These problems arise because ideal MHD does not contain dissipative processes: the fluid is considered as a perfect conductor and is perfectly coupled to the magnetic field. The formalism of non-ideal MHD describes more accurately the behavior of a magnetized fluid by considering the decoupling of electrons, ions and neutral particles from the magnetic field. These effects are respectively called the Ohmic diffusion, the Hall effect and the ambipolar diffusion. Recent studies have shown that non-ideal MHD is able to redistribute the magnetic flux and temper the magnetic braking, leading to more realistic results. In <a href= https://ui.adsabs.harvard.edu/abs/2020arXiv200901268M/abstract>Marchand et al. 2020</a>, I study how the ambipolar diffusion regulates the magnetic braking, the angular momentum and the outflows in various situations.</p>
 
+            <div class='pic'>     
+             <img src="snap_disk_m2.png" alt="Disk evolution in various environments" id="snapdisk" class="image"/>
+             <span class='legende'>Snapshots of protoplanetary disks at various times (top top bottom), produced in numerical simulations with RAMSES, in various environements. The first and third column have a standard size-distribution of grains, while the second and fourth columns have a truncated distribution. The first two column have a lower thermal support than the last two columns.</span>
+             </div>
+
+
        <h3>The Hall effect</h3>
        <p> The Hall effect is one of the three non-ideal MHD effects, beside Ohmic diffusion and ambipolar diffusion. It decribes the electric field created by the different velocities of the electrons and ions fluids. It is the least studied of the three effect because it is difficult to handle numerically. The Hall effect can play a critical role in star formation as it is able to induce a rotation in the gas, whose direction depends on the sign of the magnetic field and its resistivity, thus playing on the regulation of angular momentum. In <a href='https://ui.adsabs.harvard.edu/abs/2018A%26A...619A..37M/abstract'>Marchand et al. 2018</a> and <a href='https://ui.adsabs.harvard.edu/abs/2019A%26A...631A..66M/abstract'>Marchand et al. 2019</a>, I describe its implementation in the code RAMSES, and all subsequent tests, as well as its role in core-collapse simulations.
 
 
-       <h2>Chemistry</h2>
+       <div class="titleresearch">
+         <span class="titletitleres"> Chemistry </span>
+       </div>
 
          <h3>Chemical abundances and ionization</h3>
 
@@ -70,15 +81,11 @@ The first studies used the ideal MagnetoHydroDynamics (MHD) to study star format
              However, although the focus of lot of studies, modeling the grains : their shape, composition, size-distribution, number, is still a challenge and often necessitates complex chemical codes and experiments because they undergo a lot of physical processes. Accretion and coagulation make them grow, shattering and fragmentation breaks them. Their shapes are fractals with a lot of porosity. I am working on a simple method to track the coagulation and ionization of grains. This method would be inexpensive and fast to implement in numerical simulations.
           </p>
 
-
-         <div class="column">
             <div class='pic'>     
-             <p><img src="snap_disk_m2.png" alt="Disk evolution in various environments" id="snapdisk" class="image"/> <span id='legende_cv'>Snapshots of protoplanetary disks at various times (top top bottom), produced in numerical simulations with RAMSES, in various environements. The first and third column have a standard size-distribution of grains, while the second and fourth columns have a truncated distribution. The first two column have a lower thermal support than the last two columns.</span></p>
-             </div>
-            <div class='pic'>     
-             <p><img src="eta.png" alt="Non-ideal MHD resistivities" id="etas" class="image"/> <span id='legende_cv'>Evolution of the non-ideal MHD resistivities with the density, for two different size distributions. In the first core, there is a difference of more than one order of magnitude.</span></p>
+             <img src="eta.png" alt="Non-ideal MHD resistivities" id="etas" class="image"/>
+             <span class='legende'>Evolution of the non-ideal MHD resistivities with the density, for two different size distributions. In the first core, there is a difference of more than one order of magnitude.</span>
             </div>
-        </div>
+
      </div> <!-- corpse -->
 
   </body>
