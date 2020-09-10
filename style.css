@@ -237,7 +237,7 @@ h2
 .titlecv
 {
   margin-top:10%;
-  font-family: "Helvetica";
+  font-family: "Arial";
   margin-bottom:3%;
   border: 2px black solid;
   width:40%;
@@ -253,12 +253,12 @@ h2
   background-color: rgb(200,200,200);
   margin-top:10%;
   margin-bottom:3%;
-  font-family: "Helvetica";
+  font-family: "Arial";
   border: 2px black solid;
   width:60%;
   margin-left:20%;
   padding-top:1%;
-  height:2.5em;
+  height:2.0em;
   font-weight: bold;
   text-align:center;
 }
