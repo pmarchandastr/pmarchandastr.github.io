@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[english]{babel}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{epsfig}
+\usepackage{graphicx,natbib}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{wasysym}
+\usepackage{natbib}
+\usepackage{ulem}
+\usepackage{cancel}
+\usepackage{subfigure}
+\usepackage[margin=3cm]{geometry}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Stellarium lab work}
+\author{Pierre Marchand}
+\maketitle
+
+\section{}
+Select any date in the middle of the night.\\
+Display the azimuthal grid, then select a shiny star not too far from a grid line.\\
+Advance in time by 1 year, several times, and notice the motion of the star compared to the grid. \\
+Do you see any pattern ? Can you explain it ?
+
+
+\section{}
+
+In the \textbf{Configuration window [F2]} $>$ Plugins, select "Angle Measure", activate "Load at startup", and restart Stellarium.\\
+You can now use the Angle Measure tool by clicking it in the bottom bar or CTRL+A.\\
+Using this tool, measure the angular size of the Moon and the Sun. Then measure the angular size of the Heart Nebula, the Orion Nebula and the Andromeda Galaxy M31. How large are they compared to the full Moon ?
+
+
+\section{}
+
+In the \textbf{Location window [F6]}, change the Planet to be Solar System Observer. Deactivate the stars by pressing S, locate the Sun and the planets, and display the orbits of the planets using \textbf{Sky and viewing options window [F4]} $>$ SSO $>$ Show orbits\\
+Select Mercury, note its position on the top left (RA/Dec), note the date, then accelerate the time until it reaches the same position again (you can use the Azimuthal Grid [Z] to help you). How much time has passed ?\\
+Then go in the \textbf{Astronomical calculations window [F10]} $>$ Graphs $>$ Graphs. Select "Celestial Body Mercury", First Graph "Heliocentric distance vs Time" and "Duration 1 year", then click "Draw graph". Then you can estimate the average distance of the Sun and Mercury. (Note: the distance is displayed in Astronomical Units, 1 AU $\approx 1.5 \times 10^{8}$ km). Note these values.\\
+The Kepler's laws state that the orbits of the planets are elliptical, with the Sun at one focus, and that their orbital period $P$ and their distance to the Sun $a$ are linked by the following relation 
+\begin{equation}
+  \frac{P^2}{a^3} = \frac{4\pi^2}{GM}
+\end{equation}
+where $G=6.7\times 10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the gravitational constant, and $M$ the mass of the Sun.
+
+Verify Kepler's laws by calculating the ratio $\frac{P^2}{a^3}$ for the 7 other planets (distribute this task among your group).\\
+Do you find a constant value ?\\
+From this data, calculate the mass of the Sun in kg (be careful to convert $P$ in seconds and $a$ in meters).\\
+In the same manner, calculate the mass of the planet of your choice using one of its moon. Please all choose a different planet/moon duo within your group. To do that, change the location to be "[Planet of your choice] Observer", double click on the planet, then simple click on the moon you want to display its orbit. To calculate the distance between both object, go in \textbf{Astronomical calculations window [F10]} $>$ PC, then choose the moon and the planet as first and second celestial body, and click on "Graphs" on the bottom left which displays the linear and angular distance of both objects. (note: the lines may be difficult to read, so just read the average value of the left axis, which should have a small range anyway.)\\
+
+
+\section{}
+
+In the \textbf{Location window [F6]}, change the Planet to be Mercury, and set the date to be today.\\
+Accelerate the time, and observe the path of the Sun in Mercury's sky. What happens near October-November 2020 ?\\
+Verify your observation with \textbf{Astronomical calculations window [F10]} $>$ Graph $>$ Transit altitude vs time over 6 years, for the Sun.\\
+Now change your location to Solar System Observer. Use the same display options as in the previous exercise (remove stars, show orbits etc.). Look at the orbit of Mercury. What happens near the dates of the phenomenon ? Check your observation at other dates.\\
+Go back to Mercury. Check again your observation by displaying \textbf{Astronomical calculations window [F10]} $>$ Graph $>$ Transit altitude vs time over 6 years, with "Distance vs Time" as a second graph.\\
+Can you find an explanation by considering angular velocities ? Observe the orbital velocity and angular velocity of Mercury at these dates compared to the rest of the orbit.\\
+Note the position of the Sun in Mercury's sky. How long does it take to go back at the same position ? How long does it take compared to one Mercury's orbit ? How long does it take compared to one Mercury rotation on its axis ? (You can estimate of 1 Mercury rotation by plotting the monthly elevation of a distant object, in \textbf{Astronomical calculations window [F10]} $>$ Graph $>$ Monthly Elevation).\\
+What can you say on the ratio between 1 Mercury's year, 1 Mercury's day (rotation) and 1 Mercury's solar day (Time for the Sun to go back at its position).
+
+
+\section{}
+
+Using the same method than for Mercury, estimate the duration of 1 Venus' year, 1 Venus's rotation and 1 Venus's solar day.\\
+What do you observe between the duration of 1 year and 1 rotation ? With this information, what would you expect for the trajectory of the sun in Venus' sky ?\\
+Find an explanation by looking closely to the path of the Sun in the sky of Venus.
+
+
+
+
+\end{document}
+
+
+
+
