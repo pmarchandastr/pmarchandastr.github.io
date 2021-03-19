@@ -28,6 +28,24 @@ header
   border-radius: 10px;
 }
 
+@media(max-width: 1000px){
+header
+{
+  display: block;
+  width:98.5%;
+  height: 170px;
+  overflow:hidden;
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  margin-bottom:5%;
+  margin-left: 0%;
+  margin-right:0%;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+}
+
 .banniere
 {
   position: relative;
@@ -70,6 +88,26 @@ nav
   border-radius: 20px;
   margin-top: 180px;
   /*margin-top: 13%;*/
+}
+
+@media(max-width: 1000px){
+nav
+{
+  display: inline-block;
+  max-width: 98.5%;
+  width: 98.5%;
+  vertical-align: top;
+  position: relative;
+  left:24.75%;
+  padding-right: 0%;
+  padding-left:  0%;
+  font-family: 'Verdana';
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 20px;
+  margin-top: 180px;
+  /*margin-top: 13%;*/
+}
 }
 
 nav ul
@@ -163,7 +201,8 @@ src: url('FuturaStd-Bold.otf');
   border-radius: 20px;
   width: 98.5%;
   margin-top: 1%;
-  margin-left: 24.75%;
+  margin-left: 2%;
+  margin-right: 2%;
   content: "";
   /*display: table;*/
   clear: both;
